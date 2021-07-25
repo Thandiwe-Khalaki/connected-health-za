@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.google.com/specimen/Festive" rel="stylesheet" type="text/css">
+
+    <title>
+        Connected Solution
+    </title>
+    <link href="Style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <h1>Preventation of Readmission</h1>
+
+    <form action="main.html">
+        <input type="text" id="Username" placeholder="Username" required>
+        <br>
+        <input type="password" id="Password" placeholder="Password" required>
+        <br>
+        <label for="Password" class="showPassword">
+        <input type="checkbox" onclick="displayPass()">Show Password </label>
+        <script>
+            function displayPass() {
+                let pass = document.getElementById("Password");
+                if (pass.type === "password") {
+                    pass.type = "text";
+                } else {
+                    pass.type = "password";
+                }
+            }
+        </script>
+        <br>
+        <button class="login" type="submit">login</button>
+    </form>
+    <div>
+        <p>OR</p><a href="register.html">register</a></div>
+</body>
+
+</html>
